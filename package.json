@@ -5,8 +5,8 @@
   "main": "index.js",
   "engineStrict": true,
   "engines": {
-    "node": ">=21.2.0",
-    "npm": ">=10.2.3"
+    "node": ">=20.x",
+    "npm": ">=10.x"
   },
   "scripts": {
     "postinstall": "npm run setup:development",
