@@ -28,6 +28,10 @@ if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
 
+app.get("/api", (_, res) => {
+  res.send("Server is up and running!");
+});
+
 app.use("*", (_, res) => {
   res.sendResponse("error/failed", 404, {
     message: "Endpoint not found!"
